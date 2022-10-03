@@ -50,13 +50,14 @@ https://download.docker.com/linux/debian $(lsb_release -cs) stable\" \
     os.system("sudo apt-get -yqq install docker-ce docker-ce-cli containerd.io docker-compose-plugin")
     # add $USER to sudo group
     os.system("sudo usermod -aG docker $USER")
-    os.system("newgrp docker") #to initialise new group to session without logout/login
+    #os.system("newgrp docker") #to initialise new group to session without logout/login
     # enable docker service
     os.system("sudo systemctl start docker.service")
     os.system("sudo systemctl enable docker.service")
     os.system("sudo systemctl enable containerd.service")
     os.system("docker --version")
     os.system("docker compose version")
+    os.system("logout")
 
 update_system()
 install_openssh_server()
