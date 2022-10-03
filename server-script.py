@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 import os
-import shutil
 
 print("server-script")
 
@@ -14,7 +13,7 @@ def install_openssh_server():
     input("When done press enter to continue...")
     src="sshd_config"
     dst="/etc/ssh/sshd_config"
-    shutil.copy(src, dst)
+    os.system(f"sudo cp -a {src} {dst}")
     os.system("sudo systemctl restart ssh")
 
 def install_firewall():
