@@ -60,6 +60,7 @@ https://download.docker.com/linux/debian $(lsb_release -cs) stable\" \
     os.system("docker compose version")
 
 update_system()
+install_openssh_server()
 install_firewall()
 install_fail2ban()
 install_docker()
