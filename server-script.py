@@ -57,7 +57,7 @@ https://download.docker.com/linux/debian $(lsb_release -cs) stable\" \
     os.system("sudo systemctl enable containerd.service")
     os.system("docker --version")
     os.system("docker compose version")
-    os.system("logout")
+    print("You may need to logout and login again to use docker command!")
 
 update_system()
 install_openssh_server()
