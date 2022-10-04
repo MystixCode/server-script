@@ -5,6 +5,7 @@ It installs ssh, firewall, fail2ban, docker
 ## Installation
 
 First add all the ports u need for your apps to install_firewall() in server-script.py
+Then run the script:
 
 ```bash
 cd server-script
