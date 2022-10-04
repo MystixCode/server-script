@@ -22,6 +22,8 @@ def install_firewall():
     os.system("sudo ufw allow 80")
     os.system("sudo ufw allow 443")
     os.system("sudo ufw allow 8899")
+    #Add here all the ports u need for your apps
+    #os.system("sudo ufw allow 3050")
     os.system("echo 'y' | sudo ufw enable")
     os.system("sudo ufw status")
 
